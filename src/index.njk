@@ -6,4 +6,10 @@ layout: "base.njk"
   <h1>Prof. yonaiker Barreto</h1>
   <h2>Matematicas</h2>
   <h2>Arte y Patrimonio</h2>
+
+  <ul>
+    {% for pagina in paginas %}
+      <li><a href="{{ pagina.url | url }}">{{ pagina.title }}</a></li>
+    {% endfor %}
+  </ul>
 </main>

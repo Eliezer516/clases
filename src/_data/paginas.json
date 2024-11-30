@@ -1,0 +1,20 @@
+[
+  {
+    "title": "1er Año",
+    "url": "/clases/1eraño",
+    "paginas": [
+      {
+        "title": "Arte y patrimonio",
+        "url": "/clases/1eraño/arteypatrimonio"
+      },
+      {
+        "title": "Matemáticas",
+        "url": "/clases/1eraño/matematicas"
+      }
+    ]
+  },
+  {
+    "title": "2do Año",
+    "url": "/clases/2doaño"
+  }
+]
