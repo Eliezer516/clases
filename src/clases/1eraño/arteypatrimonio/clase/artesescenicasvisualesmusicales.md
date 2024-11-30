@@ -6,8 +6,6 @@ title: "Las artes visuales, escenicas y musicales"
 
 ## Artes visuales
 
-$$ /frac{1}{2} $$
-
 Las artes visuales son aquellas que se expresan a través de imágenes y formas. Incluyen diferentes técnicas y medios, como la **pintura**, el **dibujo**, la **escultura**, la **fotografía**, el **cine**, la **arquitectura**, el **diseño gráfico** y la **animación**. Las artes visuales buscan comunicar ideas, emociones y conceptos a través de la creación y representación visual. A continuación, se presentan algunas de las principales manifestaciones de las artes visuales:
 
 1. **Pintura**: Es una forma de arte que consiste en aplicar pigmentos sobre una superficie, como lienzo, madera, papel o pared. Los artistas utilizan diferentes técnicas y estilos, como el óleo, el acrílico, el temple, el agua y el pastel.
