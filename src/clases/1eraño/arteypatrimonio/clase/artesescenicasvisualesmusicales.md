@@ -2,7 +2,7 @@
 title: "Las artes visuales, escenicas y musicales"
 ---
 
-**Las artes** son una expresión humana que se manifiesta a través de diversas formas y medios. Existen diferentes clasificaciones de las artes, pero una de las más comunes divide las artes en tres grandes categorías: las **artes visuales**, las **artes escénicas** y las **artes musicales**. A continuación, se presenta información relacionada con cada una de estas categorías en formato Markdown.
+**Las artes** son una expresión humana que se manifiesta a través de diversas formas y medios. Existen diferentes clasificaciones de las artes, pero una de las más comunes divide las artes en tres grandes categorías: las **artes visuales**, las **artes escénicas** y las **artes musicales**.
 
 ## Artes visuales
 

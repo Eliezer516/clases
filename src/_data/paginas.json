@@ -15,6 +15,12 @@
   },
   {
     "title": "2do Año",
-    "url": "/clases/2doaño"
+    "url": "/clases/2doaño",
+    "paginas": [
+      {
+        "title": "Arte y Patrimonio",
+        "url": "/clases/2doaño/arteypatrimonio"
+      }
+    ]
   }
 ]

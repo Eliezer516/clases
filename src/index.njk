@@ -2,14 +2,12 @@
 layout: "base.njk"
 ---
 
-<main>
-  <h1>Prof. yonaiker Barreto</h1>
-  <h2>Matematicas</h2>
-  <h2>Arte y Patrimonio</h2>
-
-  <ul>
+<main class="home">
+  <h1 class="home-title">Prof. yonaiker Barreto</h1>
+  <h2 class="home-subtitle">Secciones</h2>
+  <div class="secciones">
     {% for pagina in paginas %}
-      <li><a href="{{ pagina.url | url }}">{{ pagina.title }}</a></li>
+      <a href="{{ pagina.url | url }}" class="seccion button">{{ pagina.title }}</a>
     {% endfor %}
-  </ul>
+  </div>
 </main>

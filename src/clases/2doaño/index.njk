@@ -1,8 +1,16 @@
 ---
 title: "Clases de segundo año"
 layout: "base.njk"
+seccion: "2do Año"
 ---
 
 <main>
   <h1>clases de 2do año</h1>
+  {% for pagina in paginas %}
+    {% if pagina.title === seccion %}
+      {% for paginas in pagina.paginas %}
+        <a href="{{ paginas.url | url}}">{{paginas.title}}</a>
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
 </main>

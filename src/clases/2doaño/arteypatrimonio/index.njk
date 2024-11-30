@@ -1,0 +1,14 @@
+---
+title: Arte y Patrimonio
+layout: "base.njk"
+---
+
+<main>
+  <ul>
+  {% for post in collections.2doaño %}
+    <li>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</main>

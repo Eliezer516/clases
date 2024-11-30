@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
   <style>
     * {
       margin: 0;
@@ -18,12 +19,12 @@
       margin: 0 auto;
     }
 
-    article {
+    article, .container {
       padding: 10px;
     }
   </style>
 </head>
-<body class="container markdown-body">
+<body class="container">
   {{ content | safe }}
 </body>
 </html>
