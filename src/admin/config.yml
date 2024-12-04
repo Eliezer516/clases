@@ -4,3 +4,14 @@
 backend:
   name: git-gateway
   branch: master # The branch to update (optional; defaults to master)
+
+media_folder: ""
+
+collections:
+  - name: "1eraño"
+    label: "1er Año"
+    folder: "clases/1eraño/arteypatrimonio/clase"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string"}
+      - { label: "Body", name: "body", widget: "markdown"}
