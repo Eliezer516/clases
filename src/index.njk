@@ -1,13 +1,16 @@
 ---
 layout: "base.njk"
+title: "Inicio"
 ---
 
-<main class="home">
-  <h1 class="home-title">Prof. yonaiker Barreto</h1>
-  <h2 class="home-subtitle">Secciones</h2>
-  <div class="secciones">
-    {% for pagina in paginas %}
-      <a href="{{ pagina.url | url }}" class="seccion button">{{ pagina.title }}</a>
-    {% endfor %}
-  </div>
+<main>
+  <h1>Prof. yonaiker Barreto</h1>
+  <article>
+    <header>Secciones</header>
+    <div class="grid">
+      {% for pagina in paginas %}
+        <a href="{{ pagina.url | url }}" role="button">{{ pagina.title }}</a>
+      {% endfor %}
+    </div>
+  </article>
 </main>

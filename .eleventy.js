@@ -1,4 +1,5 @@
-module.exports = async function(eleventyConfig) {
+module.exports = function(eleventyConfig) {
+	eleventyConfig.addPassthroughCopy("src/admin/config.yml");
 
 	eleventyConfig.addCollection("1eraño", (collectionApi) => {
 		return collectionApi.getFilteredByGlob("src/clases/1eraño/arteypatrimonio/clase/*.md")

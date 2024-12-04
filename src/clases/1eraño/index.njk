@@ -6,11 +6,16 @@ seccion: "1er Año"
 
 <main>
   <h1>clases de 1er año</h1>
-  {% for pagina in paginas %}
-    {% if pagina.title === seccion %}
-      {% for paginas in pagina.paginas %}
-        <a href="{{ paginas.url | url}}">{{paginas.title}}</a>
+  <article>
+    <header>Áreas</header>
+    <div class="grid">
+      {% for pagina in paginas %}
+        {% if pagina.title === seccion %}
+          {% for paginas in pagina.paginas %}
+            <a href="{{ paginas.url | url}}" role="button">{{paginas.title}}</a>
+          {% endfor %}
+        {% endif %}
       {% endfor %}
-    {% endif %}
-  {% endfor %}
+    </div>
+  </article>
 </main>

@@ -5,26 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+  >
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 75ch;
-      margin: 0 auto;
-    }
-
-    article, .container {
-      padding: 10px;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(206px, 1fr));
     }
   </style>
 </head>
 <body class="container">
+  <header>
+    <a href="/">
+      <svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <path d="M9 22V12h6v10"></path>
+      </svg>
+    </a>
+  </header>
   {{ content | safe }}
 </body>
 </html>
