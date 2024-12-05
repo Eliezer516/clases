@@ -2,7 +2,7 @@ content:
   - name: 1eraño
     label: "1er Año"
     type: collection
-    path: "clases/1eraño/arteypatrimonio/clase"
+    path: "src/clases/1eraño/arteypatrimonio/clase"
     view:
       fields: [ title, draft, date ]
     fields:
