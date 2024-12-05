@@ -9,8 +9,6 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
   >
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hithismani/responsive-decap@main/dist/responsive.css"> <!-- Unminfied -->
-
 
   <style>
     .grid {
@@ -29,6 +27,8 @@
     </a>
   </header>
   {{ content | safe }}
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
   <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", (user) => {
