@@ -3,14 +3,21 @@
 # The backend option specifies how to access the content for your site
 backend:
   name: git-gateway
-  branch: master # The branch to update (optional; defaults to master)
+  branch: main # The branch to update (optional; defaults to master)
 
 media_folder: ""
 
 collections:
   - name: "1eraño"
     label: "1er Año"
-    folder: "clases/1eraño/arteypatrimonio/clase"
+    folder: "src/clases/1eraño/arteypatrimonio/clase"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string"}
+      - { label: "Body", name: "body", widget: "markdown"}
+  - name: "2doaño"
+    label: "2do Año"
+    folder: "clases/2doaño/arteypatrimonio/clase"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string"}
