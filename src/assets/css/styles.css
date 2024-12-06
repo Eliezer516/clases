@@ -1,5 +1,29 @@
-.contenido-clase {
-  width: 100%;
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+body > header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+article header {
+  text-align: center;
+}
+
+.container {
   max-width: 75ch;
-  margin: 0 auto;
+}
+
+.page-title {
+  text-align: center;
+}
+
+[role="button"] {
+  width: 100%;
+  max-width: 206px;
 }
