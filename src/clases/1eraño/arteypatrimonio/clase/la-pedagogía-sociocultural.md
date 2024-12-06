@@ -1,12 +1,10 @@
 ---
 title: La pedagogía sociocultural
 ---
-la pedagogía sociocultural
 
 La **pedagogía sociocultural** se centra en cómo el aprendizaje y el desarrollo cognitivo ocurren a través de la interacción social y cultural. Esta disciplina, influenciada por la teoría de Lev Vygotsky, sostiene que el aprendizaje se produce en contextos sociales, donde la comunicación y la colaboración son fundamentales. La pedagogía social, un componente clave, busca empoderar a las personas mediante la educación, promoviendo su integración en la sociedad y mejorando su calidad de vida. Su objetivo es fomentar el desarrollo humano y prevenir problemas sociales a través de la educación y el apoyo comunitario.
 
----
-cuáles son las características y objetivos de esta pedagogía?
+## cuáles son las características y objetivos de esta pedagogía?
 
 La **pedagogía sociocultural** se caracteriza por:
 
@@ -20,8 +18,7 @@ Los **objetivos** incluyen:
 - **Prevención social**: Abordar y prevenir problemas sociales mediante la educación.
 - **Inclusión**: Promover la integración de personas en riesgo de exclusión social.
 
----
-cómo la aplicamos en el aula de clase?
+## cómo la aplicamos en el aula de clase?
 
 Para aplicar la **pedagogía sociocultural** en el aula, se pueden seguir estas estrategias:
 
@@ -31,8 +28,6 @@ Para aplicar la **pedagogía sociocultural** en el aula, se pueden seguir estas 
 - **Contextualizar el aprendizaje**: Relacionar los contenidos con la cultura y experiencias de los estudiantes.
 - **Utilizar andamiaje**: Apoyar a los estudiantes en tareas dentro de su Zona de Desarrollo Próximo, permitiendo que aprendan con la ayuda de compañeros más capacitados.
 
----
-los autores deben ser latinoamericanos
 
 Algunos autores latinoamericanos que han contribuido a la **pedagogía sociocultural** son:
 
@@ -43,3 +38,4 @@ Algunos autores latinoamericanos que han contribuido a la **pedagogía sociocult
 - **Jesualdo Sosa**: Contribuyó al desarrollo de prácticas pedagógicas inclusivas y contextualizadas.
 
 Estos autores han influido significativamente en el pensamiento pedagógico en América Latina.
+
