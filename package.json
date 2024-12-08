@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "eleventy --serve --quiet",
     "build": "eleventy",
+    "local": "decap-server",
     "debug": "cross-env DEBUG=Eleventy* eleventy"
   },
   "keywords": [],
@@ -13,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@vrugtehagel/eleventy-tex": "npm:@jsr/vrugtehagel__eleventy-tex@^0.1.2"
+    "@vrugtehagel/eleventy-tex": "npm:@jsr/vrugtehagel__eleventy-tex@^0.1.2",
+    "decap-server": "^3.1.2"
   }
 }
