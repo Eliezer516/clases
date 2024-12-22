@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 # Decap CMS Configuration File
 local_backend: true
 # The backend option specifies how to access the content for your site
+=======
+local_backend: true
+
+>>>>>>> 23907e667d90bfcb8515454e0161f83b45708072
 backend:
   name: git-gateway
   branch: main # The branch to update (optional; defaults to master)
@@ -9,23 +14,42 @@ media_folder: ""
 
 collections:
   - name: "arteypatrimonio1eraño"
+<<<<<<< HEAD
     label: "1er Año - Arte y Patrimonio"
+=======
+    label: "Arte y Patrimonio - 1er Año"
+>>>>>>> 23907e667d90bfcb8515454e0161f83b45708072
     folder: "src/clases/1eraño/arteypatrimonio/clase"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string"}
       - { label: "Body", name: "body", widget: "markdown"}
+<<<<<<< HEAD
   - name: "matematicas1eraño"
     label: "1er Año - Matematicas"
+=======
+  - name: "matematica1eraño"
+    label: "Matematicas - 1er Año"
+>>>>>>> 23907e667d90bfcb8515454e0161f83b45708072
     folder: "src/clases/1eraño/matematicas/clase"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string"}
       - { label: "Body", name: "body", widget: "markdown"}
   - name: "arteypatrimonio2doaño"
+<<<<<<< HEAD
     label: "2do Año - Arte y Patrimonio"
+=======
+    label: "Arte y Patrimonio - 2do Año"
+>>>>>>> 23907e667d90bfcb8515454e0161f83b45708072
     folder: "src/clases/2doaño/arteypatrimonio/clase"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string"}
       - { label: "Body", name: "body", widget: "markdown"}
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 23907e667d90bfcb8515454e0161f83b45708072

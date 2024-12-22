@@ -1,7 +1,9 @@
 [
   {
     "title": "1er Año",
+    "name": "1eraño",
     "url": "/clases/1eraño",
+    "folder": "src/clases/1eraño",
     "paginas": [
       {
         "title": "Arte y patrimonio",
@@ -15,7 +17,9 @@
   },
   {
     "title": "2do Año",
+    "name": "2doaño",
     "url": "/clases/2doaño",
+    "folder": "src/clases/2doaño",
     "paginas": [
       {
         "title": "Arte y Patrimonio",
