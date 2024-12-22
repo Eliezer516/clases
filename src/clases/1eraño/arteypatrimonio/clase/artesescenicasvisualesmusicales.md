@@ -1,6 +1,22 @@
 ---
-title: "Las artes visuales, escenicas y musicales"
+title: Las artes visuales, escenicas y musicales
 ---
+![hola](https://placehold.co/400/666666/FFFF32 "hola")
+
+<div class="gallery">
+  <img src="https://placehold.co/400/000000/FFFFFF" alt="Imagen 1" class="gallery-item">
+  <img src="https://placehold.co/400/111111/FFFFFF" alt="Imagen 2" class="gallery-item">
+  <img src="https://placehold.co/400/222222/FFFFFF" alt="Imagen 3" class="gallery-item">
+  <img src="https://placehold.co/400/333333/FFFFFF" alt="Imagen 4" class="gallery-item">
+  <img src="https://placehold.co/400/444444/FFFFFF" alt="Imagen 5" class="gallery-item">
+  <img src="https://placehold.co/400/555555/FFFFFF" alt="Imagen 6" class="gallery-item">
+</div>
+
+<div class="lightbox" id="lightbox">
+    <span class="close" id="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="thumbnails" id="thumbnails"></div>
+</div>
 
 **Las artes** son una expresión humana que se manifiesta a través de diversas formas y medios. Existen diferentes clasificaciones de las artes, pero una de las más comunes divide las artes en tres grandes categorías: las **artes visuales**, las **artes escénicas** y las **artes musicales**.
 

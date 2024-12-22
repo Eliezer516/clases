@@ -6,13 +6,21 @@
   "scripts": {
     "dev": "eleventy --serve --quiet",
     "build": "eleventy",
-    "debug": "cross-env DEBUG=Eleventy* eleventy"
+    "decap": "decap-server",
+    "debug": "cross-env DEBUG=Eleventy* eleventy",
+    "start": "concurrently \"pnpm run dev\" \"pnpm run decap\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@vrugtehagel/eleventy-tex": "npm:@jsr/vrugtehagel__eleventy-tex@^0.1.2"
+    "@formkit/tempo": "^0.1.2",
+    "@vrugtehagel/eleventy-tex": "npm:@jsr/vrugtehagel__eleventy-tex@^0.1.2",
+    "decap-server": "^3.1.2",
+    "markdown-it": "^14.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
   }
 }

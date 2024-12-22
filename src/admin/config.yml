@@ -1,5 +1,5 @@
 # Decap CMS Configuration File
-
+local_backend: true
 # The backend option specifies how to access the content for your site
 backend:
   name: git-gateway
@@ -8,15 +8,22 @@ backend:
 media_folder: ""
 
 collections:
-  - name: "1eraño"
-    label: "1er Año"
+  - name: "arteypatrimonio1eraño"
+    label: "1er Año - Arte y Patrimonio"
     folder: "src/clases/1eraño/arteypatrimonio/clase"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string"}
       - { label: "Body", name: "body", widget: "markdown"}
-  - name: "2doaño"
-    label: "2do Año"
+  - name: "matematicas1eraño"
+    label: "1er Año - Matematicas"
+    folder: "src/clases/1eraño/matematicas/clase"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string"}
+      - { label: "Body", name: "body", widget: "markdown"}
+  - name: "arteypatrimonio2doaño"
+    label: "2do Año - Arte y Patrimonio"
     folder: "src/clases/2doaño/arteypatrimonio/clase"
     create: true
     fields:

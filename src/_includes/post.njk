@@ -8,3 +8,119 @@ layout: "base.njk"
     {{ content | safe }}
   </section>
 </main>
+
+<script>
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.getElementById('close');
+  const thumbnails = document.getElementById('thumbnails');
+  let currentIndex = 0;
+
+  galleryItems.forEach((item, index) => {
+      item.addEventListener('click', () => {
+          currentIndex = index;
+          openLightbox(item.src);
+      });
+  });
+
+  closeBtn.addEventListener('click', () => {
+      closeLightbox();
+  });
+
+  lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) {
+          closeLightbox();
+      }
+  });
+
+  function openLightbox(src) {
+      lightbox.style.display = 'flex';
+      lightbox.offsetHeight; // Forzar reflujo
+      lightbox.classList.add('active');
+      lightboxImg.src = src;
+      lightboxImg.classList.add('show'); // Mostrar imagen
+      updateThumbnails(src);
+      document.addEventListener('keydown', handleKeyDown); // Escuchar teclas
+  }
+
+  function closeLightbox() {
+      document.removeEventListener('keydown', handleKeyDown); // Dejar de escuchar teclas
+      lightbox.classList.remove('active');
+      lightboxImg.classList.remove('show'); // Ocultar imagen
+      setTimeout(() => {
+          lightbox.style.display = 'none'; // Oculta después de la animación
+      }, 500); // Tiempo de la animación
+  }
+
+  function updateThumbnails(currentSrc) {
+      thumbnails.innerHTML = '';
+      galleryItems.forEach((item) => {
+          const thumbnail = document.createElement('img');
+          thumbnail.src = item.src;
+          thumbnail.classList.add('thumbnail');
+          
+          // Resaltar la miniatura seleccionada
+          if (item.src === currentSrc) {
+              thumbnail.classList.add('selected');
+          }
+
+          thumbnail.addEventListener('click', () => {
+              changeImage(item.src);
+          });
+
+          thumbnails.appendChild(thumbnail);
+      });
+  }
+
+  function changeImage(src) {
+      lightboxImg.classList.remove('show'); // Ocultar imagen
+      setTimeout(() => {
+          lightboxImg.src = src; // Cambia la imagen
+          lightboxImg.classList.add('show'); // Mostrar nueva imagen
+          updateThumbnails(src); // Actualizar miniaturas
+      }, 500); // Tiempo de la animación
+  }
+
+  function handleKeyDown(event) {
+      if (event.key === 'ArrowRight') {
+          showNextImage();
+      } else if (event.key === 'ArrowLeft') {
+          showPreviousImage();
+      }
+  }
+
+  // Manejar el deslizamiento
+  let startX;
+
+  lightbox.addEventListener('touchstart', (event) => {
+      startX = event.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchmove', (event) => {
+      if (!startX) return;
+      const moveX = event.touches[0].clientX;
+      const diffX = startX - moveX;
+
+      if (Math.abs(diffX) > 50) {
+          if (diffX > 0) {
+              // Deslizar a la izquierda
+              showNextImage();
+          } else {
+              // Deslizar a la derecha
+              showPreviousImage();
+          }
+          startX = null; // Reiniciar
+      }
+  });
+
+  function showNextImage() {
+      currentIndex = (currentIndex + 1) % galleryItems.length;
+      changeImage(galleryItems[currentIndex].src);
+  }
+
+  function showPreviousImage() {
+      currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+      changeImage(galleryItems[currentIndex].src);
+  }
+</script>
