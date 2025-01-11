@@ -1,6 +1,11 @@
 ---
 title: Las artes visuales, escenicas y musicales
+tags: ["1eraño", "arteypatrimonio"]
+layout: "post.njk"
+eleventyComputed:
+  permalink: "{{tags[0]}}/{{tags[1]}}/{{title | slugify }}/"
 ---
+
 ![hola](https://placehold.co/400/666666/FFFF32 "hola")
 
 <div class="gallery">

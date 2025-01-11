@@ -1,4 +1,7 @@
+require("pretty-error").start()
 const { format } = require("@formkit/tempo")
+const seccionesYAreas = require("./src/_data/areas.js")
+const paginas = require("./src/_data/paginas.json")
 
 module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/admin/config.yml");
@@ -16,25 +19,29 @@ module.exports = function(eleventyConfig) {
 		`
 	})
 
-	eleventyConfig.addCollection("1eraño", (collectionApi) => {
-		return collectionApi.getFilteredByGlob("src/clases/1eraño/arteypatrimonio/clase/*.md")
-	})
+	eleventyConfig.addCollection("clases", (collectionsApi) => {
+	    const result = {};
+	    
+	    seccionesYAreas.forEach(({ seccion, area }) => {
+	        // Si no existe la sección en el resultado, la crea
+	        if (!result[seccion]) {
+	            result[seccion] = [];
+	        }
+	        
+	        const paginasFiltradas = collectionsApi.getFilteredByTags(seccion, area);
+	        
+	        result[seccion].push({
+	            seccion: seccion,
+	            area: area,
+	            paginas: paginasFiltradas
+	        });
+	    });
 
-	eleventyConfig.addCollection("2doaño", (collectionApi) => {
-		return collectionApi.getFilteredByGlob("src/clases/2doaño/arteypatrimonio/clase/*.md")
-	})
+	    // Convertir el objeto a un array plano para la paginación
+	    return Object.values(result).flat();
+	});
 
-	eleventyConfig.addCollection("clases", (collectionApi) => {
-		return {
-			"1eraño": {
-				"arteypatrimonio": collectionApi.getFilteredByGlob("src/clases/1eraño/arteypatrimonio/clase/*.md"),
-				"matematicas": collectionApi.getFilteredByGlob("src/clases/1eraño/matematicas/clase/*.md")
-			},
-			"2doaño": {
-				"arteypatrimonio": collectionApi.getFilteredByGlob("src/clases/2doaño/arteypatrimonio/clase/*.md")
-			}
-		}
-	})
+
 
 	eleventyConfig.setServerOptions({
 		showAllHosts: true
@@ -47,3 +54,29 @@ module.exports = function(eleventyConfig) {
 	  }
 	}
 };
+
+// [
+//   { seccion: '1eraño', area: 'arteypatrimonio', clases: [ [Object] ] },
+//   { seccion: '1eraño', area: 'matematicas', clases: [] },
+//   { seccion: '2doaño', area: 'arteypatrimonio', clases: [] }
+// ]
+
+// [
+// 	{
+// 		"1eraño": {
+// 			"arteypatrimonio": {
+// 				clases: [ [Object] ]
+// 			},
+// 			"matematicas": {
+// 				clases: [ [Object] ]
+// 			}
+// 		}
+// 	},
+// 	{
+// 		"2doaño": {
+// 			"arteypatrimonio": {
+// 				clases: [ [Object] ]
+// 			}
+// 		}
+// 	}
+// ]

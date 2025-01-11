@@ -9,7 +9,7 @@ title: "Inicio"
     <header>Secciones</header>
     <div class="grid">
       {% for pagina in paginas %}
-        <a href="{{ pagina.url | url }}" role="button">{{ pagina.title }}</a>
+        <a href="{{ pagina.name | url }}" role="button">{{ pagina.title }}</a>
       {% endfor %}
     </div>
   </article>

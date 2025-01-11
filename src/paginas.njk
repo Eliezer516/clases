@@ -1,0 +1,26 @@
+---
+pagination:
+  data: paginas
+  size: 1
+  alias: secciones
+permalink: "{{ secciones.name | url }}/"
+layout: "base.njk"
+eleventyComputed:
+  title: "Clases de {{ secciones.title }}"
+---
+
+<main>
+  <h1 class="page-title">Clases de {{ secciones.title }}</h1>
+  <article>
+    <header>Áreas</header>
+    <div class="grid">
+      {% for pagina in paginas %}
+        {% if pagina.title === secciones.title %}
+          {% for paginas in pagina.paginas %}
+            <a href="{{ paginas.name | url}}" role="button">{{paginas.title}}</a>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </article>
+</main>

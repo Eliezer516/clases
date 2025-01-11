@@ -1,0 +1,18 @@
+---
+pagination:
+  data: collections.clases
+  size: 1
+  alias: seccion
+permalink: "{{ seccion.seccion }}/{{ seccion.area }}/"
+layout: "base.njk"
+---
+
+<h1>Sección: {{ seccion.seccion }}</h1>
+<h2>Área: {{ seccion.area }}</h2>
+
+{% for pagina in seccion.paginas %}
+    <article>
+        <a href="{{pagina.url}}"><h3>{{ pagina.data.title }}</h3></a>
+        <!-- Agrega más detalles según tus necesidades -->
+    </article>
+{% endfor %}

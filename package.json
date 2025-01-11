@@ -9,8 +9,7 @@
     "decap": "decap-server",
     "debug": "cross-env DEBUG=Eleventy* eleventy",
     "start": "concurrently \"pnpm run dev\" \"pnpm run decap\"",
-    "local": "decap-server",
-    "debug": "cross-env DEBUG=Eleventy* eleventy"
+    "local": "decap-server"
   },
   "keywords": [],
   "author": "",
@@ -20,11 +19,12 @@
     "@formkit/tempo": "^0.1.2",
     "@vrugtehagel/eleventy-tex": "npm:@jsr/vrugtehagel__eleventy-tex@^0.1.2",
     "decap-server": "^3.1.2",
-    "markdown-it": "^14.1.0"
+    "markdown-it": "^14.1.0",
+    "pretty-error": "^4.0.0"
   },
   "devDependencies": {
-    "concurrently": "^9.1.0",
     "@vrugtehagel/eleventy-tex": "npm:@jsr/vrugtehagel__eleventy-tex@^0.1.2",
+    "concurrently": "^9.1.0",
     "decap-server": "^3.1.2"
   }
 }
