@@ -28,7 +28,9 @@ module.exports = function(eleventyConfig) {
 	            result[seccion] = [];
 	        }
 	        
-	        const paginasFiltradas = collectionsApi.getFilteredByTags(seccion, area);
+	        const paginasFiltradas = collectionsApi.getFilteredByGlob("src/clases/*.md").filter(claseData => {
+	        	return claseData.data.seccion === seccion && claseData.data.area === area
+	        })
 	        
 	        result[seccion].push({
 	            seccion: seccion,

@@ -1,8 +1,7 @@
 ---
 title: El sistema sexagesimal
-tags: ["1eraño", "matematicas"]
-eleventyComputed:
-  permalink: "{{tags[0]}}/{{tags[1]}}/{{title | slugify }}/"
+seccion: "1eraño"
+area: "matematicas"
 ---
 
 

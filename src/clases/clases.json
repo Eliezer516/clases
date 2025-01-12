@@ -1,3 +1,7 @@
 {
-	"layout": "post.njk"
+	"layout": "post.njk",
+	"eleventyComputed": {
+		"permalink": "{{seccion}}/{{area}}/{{title | slugify }}/",
+		"sveltiafilter": "{{seccion}}-{{area}}"
+	}
 }
