@@ -1,12 +1,9 @@
 ---
 title: Las artes visuales, escenicas y musicales
-seccion: "1eraño"
-area: "arteypatrimonio"
-sveltiafilter: "1eraño-arteypatrimonio"
+sveltiafilter: 1eraño-arteypatrimonio
+area: arteypatrimonio
+seccion: 1eraño
 ---
-
-![hola](https://placehold.co/400/666666/FFFF32 "hola")
-
 <div class="gallery">
   <img src="https://placehold.co/400/000000/FFFFFF" alt="Imagen 1" class="gallery-item">
   <img src="https://placehold.co/400/111111/FFFFFF" alt="Imagen 2" class="gallery-item">
