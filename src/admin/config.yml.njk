@@ -4,7 +4,7 @@ permalink: "admin/config.yml"
 backend:
   name: github
   repo: Eliezer516/clases
-  branch: master
+  branch: main
 
 media_folder: ""
 
@@ -14,9 +14,9 @@ collections:
   - name: "{{ data.seccion}}-{{data.area}}"
     label: "{{ data.seccion}} - {{data.area}}"
     folder: "src/clases"
+    create: true
     filter: {field: "sveltiafilter", value: "{{data.seccion}}-{{data.area}}"}
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"], hint: "Enter tags separated by a comma" }
       - { label: "Body", name: "body", widget: "markdown" }
 {% endfor %}

@@ -2,6 +2,7 @@
 title: El sistema sexagesimal
 seccion: "1eraño"
 area: "matematicas"
+sveltiafilter: "1eraño-matematicas"
 ---
 
 
