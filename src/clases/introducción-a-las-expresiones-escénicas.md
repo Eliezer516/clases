@@ -2,6 +2,7 @@
 title: Introducción a las Expresiones Escénicas
 seccion: "1eraño"
 area: "arteypatrimonio"
+sveltiafilter: "1eraño-arteypatrimonio"
 ---
 Las expresiones escénicas son un conjunto de técnicas y herramientas que se utilizan en las artes escénicas para comunicar emociones, ideas y narrativas a través del movimiento, la actuación y el uso del espacio. A continuación, se presentan algunos conceptos clave sobre este fascinante campo.
 

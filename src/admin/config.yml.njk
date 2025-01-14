@@ -19,4 +19,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "filtro", name: "sveltiafilter", widget: "hidden", default: "{{data.seccion}}-{{data.area}}"}
+      - { label: "Seccion", name: "seccion", widget: "hidden", default: "{{data.seccion}}"}
+      - { label: "Area", name: "area", widget: "hidden", default: "{{data.area}}"}
 {% endfor %}
