@@ -8,7 +8,8 @@ function generarAreas(clases) {
     clase.paginas.forEach(pagina => {
       resultado.push({
         seccion,
-        area: pagina.name
+        area: pagina.name,
+        title: pagina.title
       });
     });
   });

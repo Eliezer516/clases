@@ -22,7 +22,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addCollection("clases", (collectionsApi) => {
 	    const result = {};
 	    
-	    seccionesYAreas.forEach(({ seccion, area }) => {
+	    seccionesYAreas.forEach(({ seccion, area, title }) => {
 	        // Si no existe la sección en el resultado, la crea
 	        if (!result[seccion]) {
 	            result[seccion] = [];
@@ -35,7 +35,8 @@ module.exports = function(eleventyConfig) {
 	        result[seccion].push({
 	            seccion: seccion,
 	            area: area,
-	            paginas: paginasFiltradas
+	            paginas: paginasFiltradas,
+	            title: title
 	        });
 	    });
 
