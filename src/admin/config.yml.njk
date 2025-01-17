@@ -18,6 +18,8 @@ collections:
     filter: {field: "sveltiafilter", value: "{{data.seccion}}-{{data.area}}"}
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Encuentro", name: "encuentro", widget: "string" }
+      - { label: "Clase", name: "clase", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "filtro", name: "sveltiafilter", widget: "hidden", default: "{{data.seccion}}-{{data.area}}"}
       - { label: "Seccion", name: "seccion", widget: "hidden", default: "{{data.seccion}}"}

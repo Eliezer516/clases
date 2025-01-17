@@ -133,3 +133,21 @@ article header {
         height: 40px;
     }
 }
+
+/* class cards*/
+
+
+.parent {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 8px;
+}
+    
+
+
+
+.div4 {
+  grid-column: span 3 / span 3;
+}
+        
