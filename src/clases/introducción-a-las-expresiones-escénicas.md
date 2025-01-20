@@ -10,8 +10,6 @@ Las expresiones escénicas son un conjunto de técnicas y herramientas que se ut
 
 ## ¿Qué son las expresiones escénicas?
 
-![](/pexels-thibault-trillet-167478.jpg)
-
 Las expresiones escénicas abarcan diversas formas de arte, incluyendo:
 
 - **Teatro**: Representaciones dramáticas que utilizan el diálogo y la actuación.
