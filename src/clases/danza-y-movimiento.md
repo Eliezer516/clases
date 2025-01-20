@@ -8,8 +8,9 @@ area: arteypatrimonio
 ---
 ![](/src/clases/imágenes/pexels-david-daza-30287464.jpg)
 
-
 ### 1. El papel del movimiento en las expresiones escénicas
+
+El movimiento es un elemento esencial en las expresiones escénicas, ya que proporciona un medio poderoso para comunicar emociones, narrar historias y conectar con el público. A continuación, se exploran las diferencias y características del movimiento en la danza contemporánea y la danza clásica.
 
 - **Danza Contemporánea**: 
 - Enfatiza la libertad de expresión y la improvisación.
