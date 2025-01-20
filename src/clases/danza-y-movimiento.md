@@ -6,6 +6,9 @@ sveltiafilter: 1eraño-arteypatrimonio
 seccion: 1eraño
 area: arteypatrimonio
 ---
+![](/src/clases/imágenes/pexels-david-daza-30287464.jpg)
+
+
 ### 1. El papel del movimiento en las expresiones escénicas
 
 - **Danza Contemporánea**: 
