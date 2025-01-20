@@ -6,7 +6,7 @@ sveltiafilter: 1eraño-arteypatrimonio
 seccion: 1eraño
 area: arteypatrimonio
 ---
-![](/assets/images/pexels-david-daza-30287464.jpg)
+![](/src/assets/images/pexels-david-daza-30287464.jpg)
 
 ### 1. El papel del movimiento en las expresiones escénicas
 
