@@ -1,5 +1,6 @@
 ---
 title: El arte romano
+date: 2025-01-20T11:22:00
 encuentro: '3'
 clase: 5 - 6
 sveltiafilter: 2doaño-arteypatrimonio
@@ -8,6 +9,7 @@ area: arteypatrimonio
 ---
 El arte romano abarca todas las manifestaciones artísticas desarrolladas en Roma y sus territorios desde el siglo VI a.C. hasta el IV d.C. Este arte se caracteriza por su diversidad y su influencia de culturas anteriores, especialmente la etrusca y la griega.
 
+![](/assets/images/pexels-taryn-elliott-4973612.jpg)
 
 ### Influencias y características
 
