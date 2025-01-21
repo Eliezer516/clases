@@ -1,5 +1,6 @@
 ---
 title: Danza y movimiento
+date: 2025-01-20T10:40:00
 encuentro: '4'
 clase: 7 - 8
 sveltiafilter: 1eraño-arteypatrimonio
@@ -7,6 +8,8 @@ seccion: 1eraño
 area: arteypatrimonio
 ---
 ### 1. El papel del movimiento en las expresiones escénicas
+
+![](/assets/images/pexels-david-daza-30287464.jpg)
 
 El movimiento es un elemento esencial en las expresiones escénicas, ya que proporciona un medio poderoso para comunicar emociones, narrar historias y conectar con el público. A continuación, se exploran las diferencias y características del movimiento en la danza contemporánea y la danza clásica.
 
