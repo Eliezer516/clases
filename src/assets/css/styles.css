@@ -6,6 +6,12 @@
   align-items: center;
 }
 
+.post-header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 8px;
+}
+
 body > header {
   display: flex;
   justify-content: flex-end;
@@ -136,14 +142,16 @@ article header {
 
 /* class cards*/
 
+.contrast {
+  text-decoration: none;
+}
 
 .parent {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	gap: 8px;
-}
-    
+} 
 
 
 

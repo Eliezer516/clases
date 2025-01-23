@@ -4,6 +4,11 @@ layout: "base.njk"
 
 <main>
   <section class="contenido-clase markdown-body">
+    <div class="post-header">
+      <span><b>Fecha:</b> {{ date | formatDate }}</span>
+      <span><b>Encuentro:</b> {{ encuentro }}</span>
+      <span><b>Clase:</b> {{ clase }}</span>
+    </div>
     <h1>{{ title }}</h1>
     {{ content | safe }}
   </section>

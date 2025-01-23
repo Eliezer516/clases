@@ -1,4 +1,3 @@
-⁰
 ---
 pagination:
   data: collections.clases
@@ -12,8 +11,15 @@ eleventyComputed:
 
 <h2>Área: {{ seccion.title }}</h2>
 
-{% for pagina in seccion.paginas %}
-    <article>
-        <a href="{{pagina.url}}"><h3>{{ pagina.data.title }}</h3></a>
-    </article>
+{% for pagina in seccion.paginas | reverse %}
+		<a href="{{pagina.url}}" class="contrast">
+			<article>
+				<header class="post-header" style="text-align: left;">
+					<span><b>Fecha:</b> {{ pagina.date | formatDate }}</span>
+					<span><b>Encuentro:</b> {{ pagina.data.encuentro }}</span>
+					<span><b>Clase:</b> {{ pagina.data.clase }}</span>
+				</header>
+				<h3>{{ pagina.data.title }}</h3>
+			</article>
+		</a>
 {% endfor %}

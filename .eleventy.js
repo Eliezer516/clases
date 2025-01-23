@@ -8,7 +8,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("src/assets/");
 
 	eleventyConfig.addFilter("formatDate", (date) => {
-		return format(new Date(date), "long", "es")
+		return format(new Date(date), "DD/MM/YYYY", "es")
 	})
 
 	eleventyConfig.addShortcode('lightbox', (content) => {
@@ -23,24 +23,25 @@ module.exports = function(eleventyConfig) {
 	    const result = {};
 	    
 	    seccionesYAreas.forEach(({ seccion, area, title }) => {
-	        // Si no existe la sección en el resultado, la crea
-	        if (!result[seccion]) {
-	            result[seccion] = [];
-	        }
-	        
-	        const paginasFiltradas = collectionsApi.getFilteredByGlob("src/clases/*.md").filter(claseData => {
-	        	return claseData.data.seccion === seccion && claseData.data.area === area
-	        })
 
-			const paginasOrdenadasPorClase = paginasFiltradas.sort((a, b) => b.data.clase - a.data.clase)
-	        
-	        result[seccion].push({
-	            seccion: seccion,
-	            area: area,
-	            paginas: paginasOrdenadasPorClase,
-	            title: title
-	        });
-	    });
+        // Si no existe la sección en el resultado, la crea
+        if (!result[seccion]) {
+            result[seccion] = [];
+        }
+        
+        const paginasFiltradas = collectionsApi.getFilteredByGlob("src/clases/*.md").filter(claseData => {
+        	return claseData.data.seccion === seccion && claseData.data.area === area
+        })
+
+
+
+        result[seccion].push({
+            seccion: seccion,
+            area: area,
+            paginas: paginasFiltradas,
+            title: title
+        });
+			});
 
 	    // Convertir el objeto a un array plano para la paginación
 	    return Object.values(result).flat();

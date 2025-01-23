@@ -1,8 +1,11 @@
 ---
 title: Introducción a los Números Primos y Compuestos
-seccion: "1eraño"
-area: "matematicas"
+date: 2025-01-14T09:31:00
+encuentro: '2'
+clase: 3 - 4
 sveltiafilter: 1eraño-matematicas
+seccion: 1eraño
+area: matematicas
 ---
 Los números son fundamentales en matemáticas, y entre ellos, los números primos y compuestos juegan un papel crucial en diversas áreas, desde la teoría de números hasta la criptografía.
 
