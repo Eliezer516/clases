@@ -1,5 +1,6 @@
 ---
 title: Introducción a las Expresiones Escénicas
+date: 2025-01-13T21:03:00
 encuentro: '2'
 clase: 3 - 4
 sveltiafilter: 1eraño-arteypatrimonio
