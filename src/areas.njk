@@ -12,7 +12,7 @@ eleventyComputed:
 
 <h2>Área: {{ seccion.title }}</h2>
 
-{% for pagina in seccion.paginas | reverse %}
+{% for pagina in seccion.paginas %}
     <article>
         <a href="{{pagina.url}}"><h3>{{ pagina.data.title }}</h3></a>
     </article>

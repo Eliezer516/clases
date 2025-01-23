@@ -31,11 +31,13 @@ module.exports = function(eleventyConfig) {
 	        const paginasFiltradas = collectionsApi.getFilteredByGlob("src/clases/*.md").filter(claseData => {
 	        	return claseData.data.seccion === seccion && claseData.data.area === area
 	        })
+
+			const paginasOrdenadasPorClase = paginasFiltradas.sort((a, b) => b.data.clase - a.data.clase)
 	        
 	        result[seccion].push({
 	            seccion: seccion,
 	            area: area,
-	            paginas: paginasFiltradas,
+	            paginas: paginasOrdenadasPorClase,
 	            title: title
 	        });
 	    });
