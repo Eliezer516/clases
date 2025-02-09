@@ -12,6 +12,10 @@ module.exports = function(eleventyConfig) {
 		return format(new Date(date), "DD/MM/YYYY", "es")
 	})
 
+  eleventyConfig.addFilter("formatUrl", url => {
+    return url.replace(/\//g, "%2F").replace(/:/g, "%3A")
+  })
+
 	eleventyConfig.addPlugin(metagen);
 
 	eleventyConfig.addShortcode('lightbox', (content) => {
