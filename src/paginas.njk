@@ -19,7 +19,7 @@ eleventyComputed:
       {% for pagina in paginas %}
         {% if pagina.title === secciones.title %}
           {% for paginas in pagina.paginas %}
-            <a href="{{ paginas.name | url}}" role="button">{{paginas.title}}</a>
+            <a href="/{{ secciones.name | url}}/{{ paginas.name | url}}" role="button">{{paginas.title}}</a>
           {% endfor %}
         {% endif %}
       {% endfor %}
