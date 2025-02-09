@@ -7,6 +7,8 @@ permalink: "{{ seccion.seccion }}/{{ seccion.area }}/"
 layout: "base.njk"
 eleventyComputed:
   title: "Clases de {{ seccion.title }}"
+  metadata:
+    title: "Clases de {{ seccion.title }}"
 ---
 
 <h2>Área: {{ seccion.title }}</h2>
