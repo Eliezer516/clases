@@ -1,11 +1,10 @@
 {
 	"layout": "post.njk",
-  "basePath": "https://profyonaikerbarreto.netlify.app",
 	"eleventyComputed": {
 		"permalink": "{{seccion}}/{{area}}/{{title | slugify }}/",
 		"metadata": {
 			"title": "{{title}}",
-      "img": "https://v1.screenshot.11ty.dev/{{ basePath | formatUrl}}{{ page.url | formatUrl }}/opengraph/"
+			"img": "https://v1.screenshot.11ty.dev/{{ meta.baseUrl | formatUrl}}{{ page.url | formatUrl }}/opengraph/"
 		}
 	}
 }
