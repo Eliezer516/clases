@@ -1,8 +1,10 @@
 ---
 layout: "base.njk"
 title: "Inicio"
-metadata:
-  title: "Inicio"
+eleventyComputed:
+  metadata:
+    title: "{{ title }}"
+    img: "https://v1.screenshot.11ty.dev/{{ meta.baseUrl | formatUrl}}{{ page.url | formatUrl }}/opengraph/"
 ---
 
 <main>
