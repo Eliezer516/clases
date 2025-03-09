@@ -2,7 +2,7 @@
 title: El arte en África
 date: 2025-03-10T12:01:00
 encuentro: '13'
-clase: 26 - 26
+clase: 25 - 26
 sveltiafilter: 2doaño-arteypatrimonio
 seccion: 2doaño
 area: arteypatrimonio
