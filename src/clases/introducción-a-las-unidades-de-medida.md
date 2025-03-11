@@ -1,6 +1,6 @@
 ---
 title: Introducción a las Unidades de Medida
-date: 252025.03.11
+date: 2025-03-11T08:58:00
 encuentro: '14'
 clase: 27 - 28
 sveltiafilter: 1eraño-matematicas
