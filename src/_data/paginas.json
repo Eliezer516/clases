@@ -6,11 +6,6 @@
     "folder": "src/clases/1eraño",
     "paginas": [
       {
-        "title": "Arte y patrimonio",
-        "name": "arteypatrimonio",
-        "url": "/clases/1eraño/arteypatrimonio"
-      },
-      {
         "title": "Matemáticas",
         "name": "matematicas",
         "url": "/clases/1eraño/matematicas"
@@ -24,9 +19,9 @@
     "folder": "src/clases/2doaño",
     "paginas": [
       {
-        "title": "Arte y Patrimonio",
-        "name": "arteypatrimonio",
-        "url": "/clases/2doaño/arteypatrimonio"
+        "title": "Matemáticas",
+        "name": "matematica",
+        "url": "/clases/2doaño/matematica"
       }
     ]
   }
