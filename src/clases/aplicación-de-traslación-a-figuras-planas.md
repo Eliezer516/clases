@@ -7,6 +7,7 @@ sveltiafilter: 2doaño-matematica
 seccion: 2doaño
 area: matematica
 ---
+
 **Ejercicios:**
 1. "Traslada el triángulo con vértices $A(1, 2), B(3, 4), C(2, 5)$ una distancia de 3 unidades a la derecha y 2 unidades hacia abajo."
 2. "Dibuja un cuadrado con vértices en $A(0, 0), B(2, 0), C(2, 2), D(0, 2)$ y trasládalo de manera que uno de sus vértices quede en el punto $P(5, 3)$."
